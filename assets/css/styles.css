@@ -1217,6 +1217,13 @@ img {
     column-gap: 5rem;
   }
 
+  .images__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .about__img {
     width: 350px;
   }
