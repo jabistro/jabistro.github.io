@@ -151,6 +151,10 @@ img {
   text-align: center;
 }
 
+.star {
+  color: var(--title-color);
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
