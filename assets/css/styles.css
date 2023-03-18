@@ -771,6 +771,12 @@ img {
   margin-bottom: var(--mb-0-5);
 }
 
+.portfolio__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
