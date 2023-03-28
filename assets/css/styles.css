@@ -1133,6 +1133,14 @@ img {
     grid-template-columns: max-content 1fr 1fr;
   }
 
+  .images__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .home__data {
     grid-column: initial;
   }
@@ -1170,6 +1178,14 @@ img {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .images__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   body {
