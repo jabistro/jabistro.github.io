@@ -440,6 +440,12 @@ img {
   justify-content: center;
 }
 
+.about__link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
@@ -529,8 +535,12 @@ img {
   width: 89%;
 }
 
+.skills__vue {
+  width: 83%;
+}
+
 .skills__ts {
-  width: 64%;
+  width: 90%;
 }
 
 .skills__mui {
@@ -1055,7 +1065,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 567px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1067,6 +1077,10 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .about__img {
+    width: 20rem;
   }
 
   .nav__menu {
