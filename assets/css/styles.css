@@ -1009,7 +1009,7 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: hsl(var(--hue-color), 28%, 12%);
   margin-top: var(--mb-3);
 }
 
@@ -1017,7 +1017,19 @@ img {
 .footer__subtitle,
 .footer__link,
 .footer__social {
+  color: hsl(var(--hue-color), 28%, 12%);
+}
+
+/* Dark mode keeps the original light-on-dark footer styling */
+body.dark-theme .footer__title,
+body.dark-theme .footer__subtitle,
+body.dark-theme .footer__link,
+body.dark-theme .footer__social {
   color: #fff;
+}
+
+body.dark-theme .footer__copy {
+  color: var(--text-color-light);
 }
 
 /*========== SCROLL UP ==========*/
