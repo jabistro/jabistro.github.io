@@ -985,12 +985,17 @@ img {
 
 .footer__subtitle {
   font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
 }
 
 .footer__links {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+}
+
+.footer__link {
+  font-weight: var(--font-medium);
 }
 
 .footer__link:hover {
@@ -1008,6 +1013,7 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
   text-align: center;
   color: hsl(var(--hue-color), 28%, 12%);
   margin-top: var(--mb-3);
