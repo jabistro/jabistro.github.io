@@ -106,22 +106,9 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 })
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        },
-    }
-})
+// The testimonial section is now static stacked content, not a Swiper carousel.
+// A Swiper init here would grab the portfolio's shared `.swiper-pagination`
+// element and break the portfolio's arrows/dots, so it is intentionally removed.
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
