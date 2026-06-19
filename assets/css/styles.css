@@ -776,6 +776,13 @@ img {
   justify-self: center;
 }
 
+/* WolfMod is a tall portrait screenshot. Cap its height so the slide
+   doesn't stretch and push the description far down vs. the other slides. */
+.portfolio__img[src*="wolfmod"] {
+  width: auto;
+  max-height: 260px;
+}
+
 .portfolio__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -825,6 +832,16 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
   outline: none;
+}
+
+/* Keep both arrows fully visible and clickable even at the first/last slide
+   (Swiper's cssMode marks them "disabled" and fades them to 0.35 opacity),
+   so visitors always see they can swipe the portfolio. */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 /*==================== PROJECT IN MIND ====================*/

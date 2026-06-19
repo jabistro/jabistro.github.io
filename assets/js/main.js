@@ -94,6 +94,10 @@ modalCloses.forEach((modalClose) => {
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
+    // Recompute layout when the slide images finish loading (e.g. the
+    // WolfMod image) so the arrows/pagination position correctly every time.
+    observer: true,
+    observeParents: true,
 
     navigation: {
       nextEl: '.swiper-button-next',
